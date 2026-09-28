@@ -1,0 +1,31 @@
+images:
+  - file: assets/pi-agent-cover.png
+    purpose: 回答第一个 Agent 从模型到回复经历了什么
+    visible_information: 模型就绪、创建会话、事件流、最终回复四个步骤
+    takeaway: 几行调用串起配置、运行与观察
+    render_mode: deterministic-diagram
+    language_policy: 中文优先，仅保留 API 名称
+    complexity_budget: 一个结论，四个步骤
+    constraint_validation: passed
+    readability_validation: passed
+    semantic_validation: passed
+  - file: assets/pi-agent-layers.png
+    purpose: 回答 Session、Runtime、Tool 分别负责什么
+    visible_information: 三层职责、四个运行时组件、扩展机制所在位置
+    takeaway: Session 是交互入口，Runtime 提供支撑，Tool 执行操作
+    render_mode: deterministic-diagram
+    language_policy: 中文优先，仅保留精确技术标识
+    complexity_budget: 三个主要职责块，一个扩展注释
+    constraint_validation: passed
+    readability_validation: passed
+    semantic_validation: passed
+  - file: assets/pi-agent-events.png
+    purpose: 回答 subscribe 与 prompt 在工具调用期间如何配合
+    visible_information: 先订阅、再发问、可选工具调用、继续生成、运行完成
+    takeaway: subscribe 负责观察，prompt 负责启动并等待运行结束
+    render_mode: deterministic-diagram
+    language_policy: 中文优先，仅保留精确事件名与 API 名称
+    complexity_budget: 一条主线和一个可选工具分支
+    constraint_validation: passed
+    readability_validation: passed
+    semantic_validation: passed

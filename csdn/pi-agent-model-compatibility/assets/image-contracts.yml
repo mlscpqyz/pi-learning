@@ -1,0 +1,31 @@
+images:
+  - file: assets/pi-model-cover.png
+    purpose: 回答企业内网模型能否接入 Pi Agent 的核心判断
+    visible_information: 协议、流式、工具调用三项接入条件
+    takeaway: 接入前先验证接口能力，再决定配置或改造
+    render_mode: deterministic-diagram
+    language_policy: 中文优先，仅保留精确技术标识
+    complexity_budget: 一个核心结论，三个主要信息块
+    constraint_validation: passed
+    readability_validation: passed
+    semantic_validation: passed
+  - file: assets/pi-key-priority.png
+    purpose: 解释四种凭证来源发生冲突时的选择顺序
+    visible_information: 运行时注入、auth.json、models.json、内置环境变量的优先级
+    takeaway: 优先级最高的已配置来源决定最终凭证
+    render_mode: deterministic-diagram
+    language_policy: 中文优先，仅保留精确技术标识
+    complexity_budget: 四级顺序和一条结果说明
+    constraint_validation: passed
+    readability_validation: passed
+    semantic_validation: passed
+  - file: assets/pi-gateway-decision.png
+    purpose: 展示内网网关从验证到接入方案的判断路径
+    visible_information: 协议与流式检查、兼容小差异、转换层与工具能力边界
+    takeaway: 直连、兼容配置或改造由实际请求响应决定
+    render_mode: deterministic-diagram
+    language_policy: 中文优先，仅保留精确技术标识
+    complexity_budget: 三层判断与三个结果
+    constraint_validation: passed
+    readability_validation: passed
+    semantic_validation: passed

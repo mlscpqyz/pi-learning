@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+.pi/
+.codex/
+.agents/
+auth.json
+models.json
+*.pem
+*.key
+*.p12
+*.pfx
